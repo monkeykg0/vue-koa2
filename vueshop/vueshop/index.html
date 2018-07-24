@@ -4,9 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>vueshop</title>
+    <link rel="stylesheet" href="./static/normalize.css">
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+    // 移动端适配转为rem时候处以100
+    let htmlwidth=document.documentElement.clientWidth || document.body.clientWidth;
+    if(htmlwidth>750){htmlWidth=750}
+    let htmlDom=document.getElementsByTagName('html')[0]
+    htmlDom.style.fontSize=htmlwidth/7.5 +'px';//设计稿为750
+    </script>
   </body>
 </html>
